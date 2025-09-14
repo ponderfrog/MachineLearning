@@ -19,7 +19,7 @@ $$
 - Sigmoid
 - Rectified Linear Unit (ReLU)
 
-## General Guide
+## General guide
 - 检查training data的loss
     - large
         - Model bias
@@ -32,8 +32,15 @@ $$
             2. 用简单的模型来检查是否可以达到更好的效果
     - small
         - loss on testing data
-            - large
-                - overfitting
-                - mismatch
-            - small
-                - ok
+        - large
+            - overfitting
+                1. 增加训练资料
+                2. 限制模型弹性
+            - mismatch
+        - small
+            - OK
+
+## N-fold cross validation
+1. 将训练集分成N份
+2. 轮流将其中一份作为测试集
+3. 重复N次
