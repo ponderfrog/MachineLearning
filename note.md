@@ -44,3 +44,17 @@ $$
 1. 将训练集分成N份
 2. 轮流将其中一份作为测试集
 3. 重复N次
+
+
+## 梯度消失
+critical point
+gradient is close to **zero**
+- local minima
+- local maxima
+- saddle point
+
+which one?
+1. 泰勒公式展开
+2. 观察Hessian矩阵（二阶偏微分）的eigen value
+3. Hessian矩阵指出了saddle point继续下降的方向
+4. 多数时候卡在saddle point
