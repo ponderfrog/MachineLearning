@@ -58,3 +58,14 @@ which one?
 2. 观察Hessian矩阵（二阶偏微分）的eigen value
 3. Hessian矩阵指出了saddle point继续下降的方向
 4. 多数时候卡在saddle point
+
+## batch & momentum
+### Shuffle
+每个Epoch打乱重排batch中的内容
+
+### Batch size
+Large batch:训练快
+Small batch:更noisy，训练效果好
+
+### momentum
+gradient + momentum
